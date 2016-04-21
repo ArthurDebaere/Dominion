@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dominion</title>
+
+<link rel="stylesheet" type="text/css" href="CSS/reset.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/screen.css"/>
+
+<script src="JAVASCRIPT/jquery-1.11.1.min.js"></script>
+<script src="JAVASCRIPT/Script.js"></script>
+</head>
+<body>
+	<div id="main_menu" >
+		<header>
+			<img src="IMAGES/Dominion-logo.png" alt="dominion-logo"/>
+		</header>
+		<button id="register">Register</button>
+		<button id="login">Log in</button>
+		<button id="guest">Play as guest</button>
+	</div>
+	
+	<div id="register_page" class="hide">
+		<form autocomplete="off">
+				<input id="Rusername" type="text" placeholder="John Doe" required/>
+				<input id="Rpassword" type="password" placeholder="••••••••" required/>
+				<input id="mail" type="email" placeholder="john.doe@howest.be" required/>
+			<br/>
+			<input type="submit" value="register"/>
+			<input type="button" value="return"/>
+		</form>
+	</div>
+	
+	<div id="login_page" class="hide">
+		<form autocomplete="off">
+				<input id="Lusername" type="text" placeholder="John Doe" required/>
+				<input id="Lpassword" type="password" placeholder="••••••••" required/>
+			<br/>
+			<input type="submit" value="login"/>
+			<input type="button" value="return"/>
+		</form>
+	</div>
+	
+	<div id="menu" class="hide">
+		<button id="logout">Logout</button>		
+		<button id="quick_play">Quick Play</button>
+		<button id="custom_play">Custom Play</button>
+	</div>
+	
+	<div id="player_page" class="hide">
+		<form autocomplete="off">
+			<div id="player_form">
+				<input id="player1" class="jump_right" type="text" placeholder="player 1" required/>
+				<div id="clone">
+					<input id="player2" type="text" placeholder="player 2" required/>
+					<button id="add_player">add</button>
+				</div>
+			</div>
+			<br/>
+			<input type="submit" value="play"/>
+			<input type="button" value="return"/>
+		</form>
+		
+	</div>
+
+	<div id="card_choice" class="hide">
+		<h1>Choose 10 cards</h1>
+		<form>
+			<input type="submit" value="startGame"/>
+			<input type="button" value="return"/>
+		</form>
+	</div>
+</body>
+</html>

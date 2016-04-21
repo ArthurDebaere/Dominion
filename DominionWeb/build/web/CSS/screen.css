@@ -1,0 +1,140 @@
+html{
+	height:100%;
+}
+body{
+	background-image: url("../IMAGES/background.jpg");
+	background-repeat: no-repeat;
+}
+div{
+	width: 900px;
+	margin: 5% auto 0% auto;
+}
+.hide{
+	display: none;
+}
+header, article, #register_page, #login_page, #player_page{
+	text-align: center;
+}
+img{
+	width: 500px;
+}
+
+button{
+	width:255px;
+	height:120px;
+	background: url("../IMAGES/scrolls/Paper_roll_button.png") no-repeat;
+	border: none;
+	color: #663300;
+	font-weight: bold;
+	font-size: 2rem;
+	display: block;
+	margin: 0px auto;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+form{
+	width:700px;
+	margin: 0px auto;
+}
+form p label{
+	color: #663300;
+	font-size:3rem;
+	padding: 20px 15px 20px 10px;
+	text-align: left;
+}
+input[type="text"], input[type="password"], input[type="email"]{
+	background-image: url("../IMAGES/scrolls/Paper_roll_input.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border: none;
+	padding-left: 40px;
+	padding-right: 40px;
+	height:160px;
+	background-color: transparent;
+	font-size: 2rem;
+	text-align: center;
+	color: #663300;
+}
+input[type="submit"], input[type="button"], #player_page button, #logout{
+	overflow:hidden;
+    white-space:nowrap;
+    text-indent:200%;
+    line-height:0%;
+    background-image: url("../IMAGES/wooden-buttons-for-game.png");
+    background-color: transparent;
+    border-color: transparent;
+    height: 100px;
+    width: 100px;
+    background-position: -100px 0px;
+    cursor: pointer;
+}
+
+#logout{
+	position: absolute;
+	height: 90px;
+	background-position: 0px -283px;
+	right: 10%;
+}
+
+input[type="button"], #player_page button{
+    height: 90px;
+    background-position: -100px -194px;
+}
+.jump_right{
+	margin-right: 100px;
+}
+#player_page #add_player{
+    background-position: -200px -285px;
+    display: inline;
+}
+#player_page #delete_player{
+	background-position: -100px -285px;
+    display: inline;
+}
+#card_choice, #card_choice form{
+	width: 1300px;
+}
+#card_choice form{
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+#card_choice h1{
+	text-align: center;
+	font-size: 3rem;
+	background: url("../IMAGES/scrolls/Paper_roll_input.png") no-repeat;
+	color: #663300;
+	font-weight: bold;
+	background-position: center center;
+	height: 150px;
+	background-size: 400px;
+	padding-top: 80px;
+}
+
+#card_choice li{
+	display: inline;
+}
+#card_choice img{
+	width: 200px;
+	height: 300px;
+	margin: 0px 0px 30px 0px;
+}
+.sepia{
+	filter: sepia(100%);
+	-webkit-filter: sepia(100%);
+}
+
+#card_choice .check{
+	height: 50px;
+	width: 50px;
+	position: relative;
+	bottom: 275px;
+	right: 25px;
+	visibility: hidden;
+}
+#card_choice .visible{
+	visibility: visible;
+}
